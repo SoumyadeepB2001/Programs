@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=NumberRunner
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=y
+comment2.target=int\ getAnswer(int)
+comment3.params=
+comment3.target=int\ getX()
+numComments=4

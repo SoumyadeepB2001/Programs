@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=ImageFilters
+comment1.params=
+comment1.target=void\ InvertColors()
+comment10.params=
+comment10.target=java.awt.image.BufferedImage\ getImageCopy()
+comment11.params=img
+comment11.target=java.awt.image.BufferedImage\ toBufferedImage(java.awt.Image)
+comment12.params=column\ row\ image
+comment12.target=ImageFilters.Pixel\ getPixel(int,\ int,\ java.awt.image.BufferedImage)
+comment2.params=
+comment2.target=void\ ConvertToGrayScale()
+comment3.params=
+comment3.target=void\ StepColors()
+comment4.params=
+comment4.target=void\ EmbossImage()
+comment5.params=
+comment5.target=void\ BlurImage()
+comment6.params=g
+comment6.target=void\ paintComponent(java.awt.Graphics)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment8.params=
+comment8.target=void\ LoadImage()
+comment9.params=
+comment9.target=void\ ResetImage()
+numComments=13

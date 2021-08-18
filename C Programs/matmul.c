@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,n,k;
+    printf("Enter matrix dimensions\n");
+    scanf("%d",&n);
+   int ar1[n][n];
+   int ar2[n][n];
+   int ar3[n][n];
+   printf("Enter elements of the first matrix\n");
+   for(i=0;i<n;i++)
+   {
+     for(j=0;j<n;j++)
+     {
+        scanf("%d",&ar1[i][j]);
+     }
+   }
+   printf("Enter elements of the second matrix\n");
+   for(i=0;i<n;i++)
+   {
+     for(j=0;j<n;j++)
+     {
+        scanf("%d",&ar2[i][j]);
+     }
+   }
+   printf("The first matrix is:\n");
+   for(i=0;i<n;i++)
+   {
+     for(j=0;j<n;j++)
+     {
+       printf("%d\t",ar1[i][j]);
+     }
+     printf("\n");
+   }
+    printf("The second matrix is:\n");
+   for(i=0;i<n;i++)
+   {
+     for(j=0;j<n;j++)
+     {
+       printf("%d\t",ar2[i][j]);
+     }
+     printf("\n");
+   }
+   printf("The product of the two matrices is:\n");
+   for (i=0;i<n;++i) 
+   {
+      for (j=0;j<n;++j) 
+      {
+        ar3[i][j]=0;
+         for (k=0;k<n;++k) 
+         {
+            ar3[i][j] += ar1[i][k] * ar2[k][j];
+         }
+      }
+   }
+   for(i=0;i<n;i++)
+   {
+     for(j=0;j<n;j++)
+     {
+       printf("%d\t",ar3[i][j]);
+     }
+     printf("\n");
+   }
+   return 0;
+}

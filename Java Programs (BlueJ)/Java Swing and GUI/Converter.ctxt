@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Converter
+comment1.params=
+comment1.target=Converter()
+comment2.params=evt
+comment2.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment3.params=evt
+comment3.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment4.params=evt
+comment4.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment5.params=e
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
