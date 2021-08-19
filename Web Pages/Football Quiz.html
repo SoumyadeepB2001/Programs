@@ -1,0 +1,72 @@
+<html>
+<head>
+<font face="segoe script">
+<title>multiple-choice quiz form</title>
+</head>
+<body bgcolor="TURQUOISE">
+<h2><b><i>FOOTBALL QUIZ</i></b></h2>
+<br>
+<form>
+<label for="username">NAME: </label>
+<input type="text" name="username" id="username"><br>
+<label for="file">UPLOAD YOUR PHOTO: </label>
+<input type="file" name="upload" id="file"><br>
+<label for="address">ADDRESS: </label>
+<textarea rows="3" cols="30" name="address" id="address"></textarea><br>
+<label for="sex">GENDER: </label>
+<input type="radio" name="S1" value="m">Male <input type="radio" name="S2" value="f">Female<BR>
+</form>
+
+Select the correct answer and then click on the "Show Answers" button to know the answers:-
+
+<P>1. Which country has won the most number of FIFA World Cups ?<BR>
+<input type="radio" name="q1" value="Brazil">Brazil<BR>
+<input type="radio" name="q1" value="Germany">Germany<BR>
+<input type="radio" name="q1" value="Argentina">Argentina<BR>
+<input type="radio" name="q1" value="France">France<BR>
+</p> 
+
+<P>2. How many nations have won the FIFA World Cup since its inception in 1930 ?<BR>
+<input type="radio" name="q2" value="10">10<BR>
+<input type="radio" name="q2" value="7">7<BR>
+<input type="radio" name="q2" value="8">8<BR>
+<input type="radio" name="q2" value="9">9<BR>
+</p> 
+
+<P>3. In which country are the FIFA Headquarters located ?<BR>
+<input type="radio" name="q3" value="Fra">France<BR>
+<input type="radio" name="q3" value="Bra">Brazil<BR>
+<input type="radio" name="q3" value="Eng">England<BR>
+<input type="radio" name="q3" value="Swiss">Switzerland<BR>
+</p> 
+
+<P>4. Which team won the inaugural season of the English Premiere League ?<BR>
+<input type="radio" name="q4" value="manu">Manchester United F.C.<BR>
+<input type="radio" name="q4" value="liv">Liverpool F.C.<BR>
+<input type="radio" name="q4" value="che">Chelsea F.C.<BR>
+<input type="radio" name="q4" value="ars">Arsenal F.C.<BR>
+</p> 
+
+<P>5. Who is the highest scorer of the English Premiere League ?<BR>
+<input type="radio" name="q5" value="p1">Wayne Rooney<BR>
+<input type="radio" name="q5" value="p2">Frank Lampard<BR>
+<input type="radio" name="q5" value="p3">Andy Cole<BR>
+<input type="radio" name="q5" value="p4">Alan Shearer<BR>
+</p> 
+
+
+<br>
+<p id="demo" onclick="myFunction()">
+<button class="btn answers">Show Answers</button>
+</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "<b><i>Answers <p>1. Brazil</p><p>2. 8</p><p>3. Switzerland</p><p>4. Manchester United F.C.</p><p>5. Alan Shearer</P></b></i>";
+}
+</script>
+</form>
+<MARQUEE BEHAVIOR="ALTERNATE" DIRECTION="RIGHT">SOUMYADEEP BANERJEE</MARQUEE>
+</body>
+</html>
+
