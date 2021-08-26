@@ -3,26 +3,66 @@
   <head>
 	<!-- My own CSS -->
 	<link href="newstyle.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
     <title>Food Corner</title>
+	<style>
+		.container {
+		  position: relative;
+		  text-align: center;
+		  color: rgba(187, 0, 0, 0.856);
+		  font-family: 'Akaya Telivigala';
+		  font-size: 50px;
+		}
+		.centered {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, 50%);
+		}
+
+		.para{
+			font-family: 'Akaya Telivigala';
+			font-weight: 300;
+			color: rgba(187, 0, 0, 0.856);
+			font-size:25px;
+			text-align: left;
+			text-shadow: 20px;
+		}
+
+		hr.line {
+				border: 2px solid red;
+		}
+
+		</style>
   </head>
   <body>	
 			<section>
 				<ul class="navbar">
-					<li class="navbar"><img src="logo.png" height="45" width="45"></li>
-					<li class="navbar" id="active"><a class="navbar" href="#">Home</a></li>
-					<li class="navbar"><a class="navbar" href="Menu.html">Menu</a></li>
+					<li class="navbar"><img src="Images\logo.png" height="45" width="45"></li>
+					<li class="navbar" id="active"><a class="navbar" id="active" href="#">Home</a></li>
 					<li class="navbar"><a class="navbar" href="OrderNow.html">Order Now</a></li>
 					<li class="navbar"><a class="navbar" href="About.html">About</a></li>
+					<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
 					<li class="navbar"><a class="navbar" href="ContactUs.html">Contact Us</a></li>
+					<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png" height="20" width="20"></a></li>  
 					<div class="search-container">
 						<form action="/action_page.php">
 						  <input type="text" placeholder="Search" name="search">
-						  <button type="submit">Submit</button>
+						  <button type="submit"><img src="Images\search.png" height="12" width="12"></button>
 						</form>
-					  </div>
+					  </div>  
 				</ul>
 			</section>		
-  </body>
+			
+			<div class="container">
+				<img src="Images\HomeBanner.jpg" alt="Snow" style="width:100%;">
+				<div class="centered">FOOD CORNER. DELICIOUS & HYGIENIC FOOD. ANYTIME. ANYWHERE.</div>
+			  </div>
+			<hr class="line">
+			<p class="para">&nbsp;&nbsp;We serve fresh, spicy and high quality food at affortable prices.</p>
+			<p class="para">&nbsp;&nbsp;Open everyday from 8:00 AM to 10:00 PM. We have been adjudged the best restaurant of the Eastern Region in the recently concluded Super Chef 2021.</p>
+			<hr class="line">
+	</body>
 </html>
 
 

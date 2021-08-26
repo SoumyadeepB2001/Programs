@@ -3,24 +3,103 @@
   <head>
 	<!-- My own CSS -->
 	<link href="newstyle.css" rel="stylesheet">
+	<link href="cards.css" rel="stylesheet">
     <title>Food Corner</title>
   </head>
   <body>	
 			<section>
 				<ul class="navbar">
-					<li class="navbar"><img src="logo.png" height="45" width="45"></li>
+					<li class="navbar"><img src="Images\logo.png" height="45" width="45"></li>
 					<li class="navbar"><a class="navbar" href="Home.html">Home</a></li>
-					<li class="navbar"><a class="navbar" href="Menu.html">Menu</a></li>
-					<li class="navbar" id="active"><a class="navbar" href="#">Order Now</a></li>
+					<li class="navbar" id="active"><a class="navbar" id="active" href="#">Order Now</a></li>
 					<li class="navbar"><a class="navbar" href="About.html">About</a></li>
+					<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
 					<li class="navbar"><a class="navbar" href="ContactUs.html">Contact Us</a></li>
+					<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png" height="20" width="20"></a></li>
 					<div class="search-container">
 						<form action="/action_page.php">
 						  <input type="text" placeholder="Search" name="search">
-						  <button type="submit">Submit</button>
+						  <button type="submit"><img src="Images\search.png" height="12" width="12"></button>
 						</form>
 					  </div>
 				</ul>
-			</section>		
+			</section>	
+			
+			<div class="flexbox">
+				<div class="card">
+					<img src="Images\Fried Rice.jpg" alt="Fried Rice" style="width:100%">
+					<h1>Fried Rice</h1>
+					<p class="price">₹90.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+				  
+				  <div class="card">
+					<img src="Images\Chinese Rice.jpg" alt="Chinese Rice" style="width:100%">
+					<h1>Chinese Rice</h1>
+					<p class="price">₹90.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+				  
+				  <div class="card">
+					<img src="Images\Plain Rice.jpg" alt="Plain Rice" style="width:100%">
+					<h1>Plain Rice</h1>
+					<p class="price">₹35.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+	
+				  <div class="card">
+					<img src="Images\Chilli Chicken.jpg" alt="Chilli Chicken" style="width:100%">
+					<h1>Chilli Chicken</h1>
+					<p class="price">₹150.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+	
+				  <div class="card">
+					<img src="Images\Manchurian.jpg" alt="Chicken Manchurian" style="width:100%">
+					<h1>Chicken Manchurian</h1>
+					<p class="price">₹160.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+	
+				  <div class="card">
+					<img src="Images\Kebab.jpg" alt="Chicken Kebab" style="width:100%">
+					<h1>Chicken Kebab</h1>
+					<p class="price">₹200.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+	
+				  <div class="card">
+					<img src="Images\Chicken Chowmein.jpg" alt="Chicken Chowmein" style="width:100%">
+					<h1>Chicken Chowmein</h1>
+					<p class="price">₹75.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+	
+				  <div class="card">
+					<img src="Images\Basil Kebab.jpg" alt="Spicy Thai Basil Chicken Kebab" style="width:100%">
+					<h1>Spicy Thai Basil Chicken Kebab</h1>
+					<p class="price">₹250.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+	
+				  <div class="card">
+					<img src="Images\Chicken Momo.jpg" alt="Chicken Momos" style="width:100%">
+					<h1>Chicken Momos</h1>
+					<p class="price">₹110.00</p>
+					
+					<p><button>Add to Cart</button></p>
+				  </div>
+
+				  
+			</div>
+			
   </body>
 </html>

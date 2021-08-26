@@ -1,19 +1,21 @@
-.navbar
-{
-	position: sticky;
+body{
+	padding: 0;
+    margin: 0;
 }
+
 .navbar img
 {
   padding-right: 13px;
   padding-left: 8px;
 }
+
 ul.navbar
 {
 	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
+  	margin: 0px;
+  	padding: 0px;
   	overflow: hidden;
-  	background-color: rgb(53,50,50);
+  	background-color: rgb(226, 40, 40);
 }
 
 li.navbar
@@ -22,19 +24,22 @@ li.navbar
 }
 
 li a.navbar {
-	display: block;
+	display:flex;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
   }
-  
-  li a.navbar:hover:not(.active) {
-	background-color: #000000;
+
+  li a.navbar:hover:not(.active)
+  {	
+		background-color: rgb(243, 211, 211);	
+		color:black;  
   }
   
   #active {
-	background-color: #097e53;
+	background-color: white;
+	color: black;
   }
 
   .search-container {
