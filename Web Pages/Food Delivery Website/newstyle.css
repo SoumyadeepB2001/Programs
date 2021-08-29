@@ -80,4 +80,14 @@ li a.navbar {
 			position: absolute;
 		}
 
+		.flex {
+			color: white;
+			font-family: 'Akaya Telivigala';
+			font-weight: 300;
+			display: flex;
+			flex-wrap: wrap;
+			background-color: rgb(226, 40, 40);
+			justify-content: center;
+		}
+
 
