@@ -2,16 +2,18 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	max-width: 300px;
 	margin:17px;
+	margin-bottom: 30px;
 	text-align: center;
 	font-family: arial;
 	padding: 27px;
 	background-color: rgb(226, 40, 40);
 	color:aliceblue;
-  }
+}
 
   .card:hover{
-	  border-radius: 13px;
+	  border-radius: 17px;
 	  box-shadow: 0 9px 17px 0 rgb(0, 0, 0);
+	  background-color: red;
   }
   
   .price {
@@ -42,3 +44,5 @@
 	  flex-wrap:wrap;
 	  justify-content: center;
   }
+
+  

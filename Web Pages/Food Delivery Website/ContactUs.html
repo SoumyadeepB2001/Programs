@@ -41,7 +41,7 @@
 		}
 
 		input[type=submit]:hover {
-			background-color:rgba(243, 112, 112, 0.856)
+			background-color: rgba(243, 112, 112, 0.856)
 		}
 
 		.container {
@@ -50,10 +50,9 @@
 			padding: 20px;
 		}
 
-		a{
+		a {
 			text-decoration: none;
 		}
-
 	</style>
 </head>
 
@@ -84,20 +83,29 @@
 			</div>
 			<p>&nbsp;&nbsp;Email: newtownfoodcorner@gmail.com</p>
 			<p>&nbsp;&nbsp;Phone: 9883244207</p>
-			<p>&nbsp;&nbsp;Address: Club Eco Vista Premises, 2F/11, Eco-Space Business Park, Action Area II, New Town, Kolkata - 700156</p>
+			<p>&nbsp;&nbsp;Address: Club Eco Vista Premises, 2F/11, Eco-Space Business Park, Action Area II, New Town,
+				Kolkata - 700156</p>
 			<div style="text-align: center;">
 				<a href="https://www.facebook.com/facebookappIndia"><img src="Images\fb.png" height="35" width="35"></a>
-				<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images\insta.png" height="35" width="35"></a>
-				<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images\twtr.png" height="35" width="35"></a>
+				<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+						src="Images\insta.png" height="35" width="35"></a>
+				<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images\twtr.png"
+						height="35" width="35"></a>
 			</div>
 		</div>
-		
+
 		<hr class="line">
 		<div class="container">
 			<form action="action_page.php">
 
 				<label for="name">Name</label>
 				<input class="forminfo" type="text" id="name" name="name">
+
+				<label for="name">Contact Number</label>
+				<input class="forminfo" type="number" id="cnumber" name="cnumber">
+
+				<label for="add">Address</label>
+				<input class="forminfo" type="text" id="add" name="add">
 
 				<label for="city">City</label>
 				<input class="forminfo" type="text" id="city" name="city">
@@ -111,14 +119,19 @@
 					<option value="SriLanka">Sri Lanka</option>
 				</select>
 
-				<label  for="subject">Your message</label>
-				<textarea class="forminfo" id="subject" name="subject" placeholder="Write your message" style="height:200px"></textarea>
+				<label for="subject">Your message</label>
+				<textarea class="forminfo" id="subject" name="subject" placeholder="Write your message"
+					style="height:200px"></textarea>
 
 				<input type="submit" value="Submit">
 
 			</form>
 		</div>
 	</section>
+	<div class="footer">
+		<h3>Copyright © 2015-2021 New Town Food Corner. All rights reserved. Designed & Maintained by Soumyadeep
+			Banerjee</h3>
+	</div>
 </body>
 
 </html>
