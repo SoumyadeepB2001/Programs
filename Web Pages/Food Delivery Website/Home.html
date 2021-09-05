@@ -16,13 +16,6 @@
 			font-size: 50px;
 		}
 
-		.centered {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, 50%);
-		}
-
 		.para {
 			font-family: 'Akaya Telivigala';
 			font-weight: 300;
@@ -70,126 +63,129 @@
 </head>
 
 <body>
-	<section>
-		<ul class="navbar">
-			<li class="navbar"><img src="Images\logo.png" height="45" width="45"></li>
-			<li class="navbar" id="active"><a class="navbar" id="active" href="#">Home</a></li>
-			<li class="navbar"><a class="navbar" href="OrderNow.html">Order Now</a></li>
-			<li class="navbar"><a class="navbar" href="About.html">About</a></li>
-			<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
-			<li class="navbar"><a class="navbar" href="ContactUs.html">Contact Us</a></li>
-			<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png" height="20"
-						width="20"></a></li>
-			<div class="search-container">
-				<form action="/action_page.php">
-					<input type="text" placeholder="Search" name="search">
-					<button type="submit"><img src="Images\search.png" height="12" width="12"></button>
-				</form>
+	<div class="main-container"> <!--This one is mainly to keep the footer at the bottom of the viewport-->
+		<section>
+			<ul class="navbar">
+				<li class="navbar"><img src="Images\logo.png" height="37" width="38"></li>
+				<li class="navbar" id="active"><a class="navbar" id="active" href="#">Home</a></li>
+				<li class="navbar"><a class="navbar" href="OrderNow.html">Order Now</a></li>
+				<li class="navbar"><a class="navbar" href="About.html">About</a></li>
+				<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
+				<li class="navbar"><a class="navbar" href="ContactUs.html">Contact Us</a></li>
+				<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png"
+							height="18" width="16"></a></li>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search" name="search">
+						<button type="submit"><img src="Images\search.png" height="10" width="10"></button>
+					</form>
+				</div>
+			</ul>
+		</section>
+
+
+		<div class="container">
+			<img src="Images\Banner.png" alt="Banner" style="width:100%;">
+		</div>
+		<hr class="line">
+		<p class="para">We serve fresh, spicy and high quality food at affortable prices.</p>
+		<p class="para">Open everyday from 8:00 AM to 10:00 PM. We have been adjudged the best restaurant of the Eastern
+			Region in the recently concluded Super Chef 2021.</p>
+		<div class="flex">
+			<h1 class="heading">OUR SERVICES</h1>
+		</div>
+
+		<div class="flexbox">
+			<div class="card">
+				<img src="Images\catering.jpg" alt="Catering" style="width:100%">
+				<h1>Catering</h1>
+				<br>
+				<p class="price">₹450.00/serving</p>
+
+				<p><button><a class="link" href="ContactUs.html">Contact Us</a></button></p>
 			</div>
-		</ul>
-	</section>
 
+			<div class="card">
+				<img src="Images\order.jpg" alt="Online Food Delivery" style="width:100%">
+				<h1>Online Food Delivery</h1>
+				<p class="price">At the most affordable prices</p>
 
-	<div class="container">
-		<img src="Images\HomeBanner.jpg" alt="Snow" style="width:100%;">
-		<div class="centered">NEW TOWN FOOD CORNER. DELICIOUS & HYGIENIC FOOD. ANYTIME. ANYWHERE.</div>
-	</div>
-	<hr class="line">
-	<p class="para">We serve fresh, spicy and high quality food at affortable prices.</p>
-	<p class="para">Open everyday from 8:00 AM to 10:00 PM. We have been adjudged the best restaurant of the Eastern
-		Region in the recently concluded Super Chef 2021.</p>
-	<div class="flex">
-		<h1 class="heading">OUR SERVICES</h1>
-	</div>
-
-	<div class="flexbox">
-		<div class="card">
-			<img src="Images\catering.jpg" alt="Catering" style="width:100%">
-			<h1>Catering</h1>
-			<br>
-			<p class="price">₹450.00/serving</p>
-
-			<p><button><a class="link" href="ContactUs.html">Contact Us</a></button></p>
-		</div>
-
-		<div class="card">
-			<img src="Images\order.jpg" alt="Online Food Delivery" style="width:100%">
-			<h1>Online Food Delivery</h1>
-			<p class="price">At the most affordable prices</p>
-
-			<p><button><a class="link" href="OrderNow.html">Order Now</a></button></p>
-		</div>
-
-		<div class="card">
-			<img src="Images\dine.jpg" alt="Dine-in" style="width:100%">
-			<h1>Dine-in</h1>
-			<br>
-			<p class="price">At the most affordable prices</p>
-			<p><button><a class="link" href="ContactUs.html">Contact Us</a></button></p>
-		</div>
-	</div>
-
-	<div class="flex">
-		<h1 class="heading">OUR CHEFS</h1>
-	</div>
-
-	<div class="flexbox">
-		<div class="card" id="chef">
-			<img class="chef" src="Images\chef.jpg" alt="Chef 1" style="width:70%">
-			<h1>Chef 1</h1>
-			<p>Born in the heart of Mumbai city. Chef 1 was always inclined towards cooking and worked hard to
-				improve his culinary skills. He joined us in the summer of 2018 and has been working with us ever since.
-			</p>
-			<p>
-			<div style="text-align: center;">
-				<a href="https://www.facebook.com/facebookappIndia"><img class="chef" src="Images\fb.png" height="30"
-						width="30"></a>
-				<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
-						src="Images\insta.png" height="30" width="30"></a>
-				<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef" src="Images\twtr.png"
-						height="30" width="30"></a>
+				<p><button><a class="link" href="OrderNow.html">Order Now</a></button></p>
 			</div>
-			</p>
-		</div>
 
-		<div class="card">
-			<img class="chef" src="Images\chef.jpg" alt="Chef 2" style="width:70%">
-			<h1>Chef 2</h1>
-			<p>Born in the City Of Joy, Kolkata. Chef 2 has a BSc. degree in Culinary Sciences from University Of Jupiter. He joined us in the summer of 2017 and has been working with us ever since.
-			</p>
-			<p>
-			<div style="text-align: center;">
-				<a href="https://www.facebook.com/facebookappIndia"><img class="chef" src="Images\fb.png" height="30"
-						width="30"></a>
-				<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
-						src="Images\insta.png" height="30" width="30"></a>
-				<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef" src="Images\twtr.png"
-						height="30" width="30"></a>
+			<div class="card">
+				<img src="Images\dine.jpg" alt="Dine-in" style="width:100%">
+				<h1>Dine-in</h1>
+				<br>
+				<p class="price">At the most affordable prices</p>
+				<p><button><a class="link" href="ContactUs.html">Contact Us</a></button></p>
 			</div>
-			</p>
 		</div>
 
-		<div class="card" id="chef">
-			<img class="chef" src="Images\chef.jpg" alt="Chef 3" style="width:70%">
-			<h1>Chef 3</h1>
-			<p>Born in Delhi. He was the Runner-up in Masterchef India 2015. He joined us in the summer of 2018 and has been working with us ever since.
-			</p>
-			<p>
-			<div style="text-align: center;">
-				<a href="https://www.facebook.com/facebookappIndia"><img class="chef" src="Images\fb.png" height="30"
-						width="30"></a>
-				<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
-						src="Images\insta.png" height="30" width="30"></a>
-				<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef" src="Images\twtr.png"
-						height="30" width="30"></a>
+		<div class="flex">
+			<h1 class="heading">OUR CHEFS</h1>
+		</div>
+
+		<div class="flexbox">
+			<div class="card" id="chef">
+				<img class="chef" src="Images\chef.jpg" alt="Chef 1" style="width:70%">
+				<h1>Chef 1</h1>
+				<p>Born in the heart of Mumbai city. Chef 1 was always inclined towards cooking and worked hard to
+					improve his culinary skills. He joined us in the summer of 2018 and has been working with us ever
+					since.
+				</p>
+				<p>
+				<div style="text-align: center;">
+					<a href="https://www.facebook.com/facebookappIndia"><img class="chef" src="Images\fb.png"
+							height="30" width="30"></a>
+					<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
+							src="Images\insta.png" height="30" width="30"></a>
+					<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
+							src="Images\twtr.png" height="30" width="30"></a>
+				</div>
+				</p>
 			</div>
-			</p>
-		</div>
-	</div>
 
-	<div class="footer">
-		<h3>Copyright © 2015-2021 New Town Food Corner. All rights reserved. Designed & Maintained by Soumyadeep
-			Banerjee</h3>
+			<div class="card">
+				<img class="chef" src="Images\chef.jpg" alt="Chef 2" style="width:70%">
+				<h1>Chef 2</h1>
+				<p>Born in the City Of Joy, Kolkata. Chef 2 has a BSc. degree in Culinary Sciences from University Of
+					Jupiter. He joined us in the summer of 2017 and has been working with us ever since.
+				</p>
+				<p>
+				<div style="text-align: center;">
+					<a href="https://www.facebook.com/facebookappIndia"><img class="chef" src="Images\fb.png"
+							height="30" width="30"></a>
+					<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
+							src="Images\insta.png" height="30" width="30"></a>
+					<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
+							src="Images\twtr.png" height="30" width="30"></a>
+				</div>
+				</p>
+			</div>
+
+			<div class="card" id="chef">
+				<img class="chef" src="Images\chef.jpg" alt="Chef 3" style="width:70%">
+				<h1>Chef 3</h1>
+				<p>Born in Delhi. He was the Runner-up in Masterchef India 2015. He joined us in the summer of 2018 and
+					has been working with us ever since.
+				</p>
+				<p>
+				<div style="text-align: center;">
+					<a href="https://www.facebook.com/facebookappIndia"><img class="chef" src="Images\fb.png"
+							height="30" width="30"></a>
+					<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
+							src="Images\insta.png" height="30" width="30"></a>
+					<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;<img class="chef"
+							src="Images\twtr.png" height="30" width="30"></a>
+				</div>
+				</p>
+			</div>
+		</div>
+
+		<br><br><br>
+		<footer>Copyright © 2015-2021 New Town Food Corner. All rights reserved. Designed & Maintained by
+			SoumyadeepB2001.</footer>
 	</div>
 
 </body>

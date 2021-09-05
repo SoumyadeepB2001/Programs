@@ -5,111 +5,114 @@
 	<!-- My own CSS -->
 	<link href="newstyle.css" rel="stylesheet">
 	<link href="cards.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
 	<title>Food Corner</title>
 </head>
 
 <body>
-	<section>
-		<ul class="navbar">
-			<li class="navbar"><img src="Images\logo.png" height="45" width="45"></li>
-			<li class="navbar"><a class="navbar" href="Home.html">Home</a></li>
-			<li class="navbar" id="active"><a class="navbar" id="active" href="#">Order Now</a></li>
-			<li class="navbar"><a class="navbar" href="About.html">About</a></li>
-			<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
-			<li class="navbar"><a class="navbar" href="ContactUs.html">Contact Us</a></li>
-			<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png" height="20"
-						width="20"></a></li>
-			<div class="search-container">
-				<form action="/action_page.php">
-					<input type="text" placeholder="Search" name="search">
-					<button type="submit"><img src="Images\search.png" height="12" width="12"></button>
-				</form>
-			</div>
-		</ul>
-	</section>
+	<div class="main-container"> <!--This one is mainly to keep the footer at the bottom of the viewport-->
+		<section>
+			<ul class="navbar">
+				<li class="navbar"><img src="Images\logo.png" height="37" width="38"></li>
+				<li class="navbar"><a class="navbar" href="Home.html">Home</a></li>
+				<li class="navbar" id="active"><a class="navbar" id="active" href="#">Order Now</a></li>
+				<li class="navbar"><a class="navbar" href="About.html">About</a></li>
+				<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
+				<li class="navbar"><a class="navbar" href="ContactUs.html">Contact Us</a></li>
+				<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png"
+							height="18" width="16"></a></li>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search" name="search">
+						<button type="submit"><img src="Images\search.png" height="10" width="10"></button>
+					</form>
+				</div>
+			</ul>
+		</section>
 
-	<div class="flex">
-		<h1 class="heading">ORDER NOW</h1>
-	</div>
-
-	<div class="flexbox">
-		<div class="card">
-			<img src="Images\Fried Rice.jpg" alt="Fried Rice" style="width:100%">
-			<h1>Fried Rice</h1>
-			<p class="price">₹90.00</p>
-
-			<p><button>Add to Cart</button></p>
+		<div class="flex">
+			<h1 class="heading">ORDER NOW</h1>
 		</div>
 
-		<div class="card">
-			<img src="Images\Chinese Rice.jpg" alt="Chinese Rice" style="width:100%">
-			<h1>Chinese Rice</h1>
-			<p class="price">₹90.00</p>
+		<section>
+			<div class="flexbox">
+				<div class="card">
+					<img src="Images\Fried Rice.jpg" alt="Fried Rice" style="width:100%">
+					<h1>Fried Rice</h1>
+					<p class="price">₹90.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
-		<div class="card">
-			<img src="Images\Plain Rice.jpg" alt="Plain Rice" style="width:100%">
-			<h1>Plain Rice</h1>
-			<p class="price">₹35.00</p>
+				<div class="card">
+					<img src="Images\Chinese Rice.jpg" alt="Chinese Rice" style="width:100%">
+					<h1>Chinese Rice</h1>
+					<p class="price">₹90.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
-		<div class="card">
-			<img src="Images\Chilli Chicken.jpg" alt="Chilli Chicken" style="width:100%">
-			<h1>Chilli Chicken</h1>
-			<p class="price">₹150.00</p>
+				<div class="card">
+					<img src="Images\Plain Rice.jpg" alt="Plain Rice" style="width:100%">
+					<h1>Plain Rice</h1>
+					<p class="price">₹35.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
-		<div class="card">
-			<img src="Images\Manchurian.jpg" alt="Chicken Manchurian" style="width:100%">
-			<h1>Chicken Manchurian</h1>
-			<p class="price">₹160.00</p>
+				<div class="card">
+					<img src="Images\Chilli Chicken.jpg" alt="Chilli Chicken" style="width:100%">
+					<h1>Chilli Chicken</h1>
+					<p class="price">₹150.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
-		<div class="card">
-			<img src="Images\Kebab.jpg" alt="Chicken Kebab" style="width:100%">
-			<h1>Chicken Kebab</h1>
-			<p class="price">₹200.00</p>
+				<div class="card">
+					<img src="Images\Manchurian.jpg" alt="Chicken Manchurian" style="width:100%">
+					<h1>Chicken Manchurian</h1>
+					<p class="price">₹160.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
-		<div class="card">
-			<img src="Images\Chicken Chowmein.jpg" alt="Chicken Chowmein" style="width:100%">
-			<h1>Chicken Chowmein</h1>
-			<p class="price">₹75.00</p>
+				<div class="card">
+					<img src="Images\Kebab.jpg" alt="Chicken Kebab" style="width:100%">
+					<h1>Chicken Kebab</h1>
+					<p class="price">₹200.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
-		<div class="card">
-			<img src="Images\Basil Kebab.jpg" alt="Spicy Thai Basil Chicken Kebab" style="width:100%">
-			<h1>Spicy Thai Basil Chicken Kebab</h1>
-			<p class="price">₹250.00</p>
+				<div class="card">
+					<img src="Images\Chicken Chowmein.jpg" alt="Chicken Chowmein" style="width:100%">
+					<h1>Chicken Chowmein</h1>
+					<p class="price">₹75.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
-		<div class="card">
-			<img src="Images\Chicken Momo.jpg" alt="Steamed Chicken Momos" style="width:100%">
-			<h1>Steamed Chicken Momos</h1>
-			<p class="price">₹70.00</p>
+				<div class="card">
+					<img src="Images\Basil Kebab.jpg" alt="Spicy Thai Basil Chicken Kebab" style="width:100%">
+					<h1>Spicy Thai Basil Chicken Kebab</h1>
+					<p class="price">₹250.00</p>
 
-			<p><button>Add to Cart</button></p>
-		</div>
+					<p><button>Add to Cart</button></p>
+				</div>
 
+				<div class="card">
+					<img src="Images\Chicken Momo.jpg" alt="Steamed Chicken Momos" style="width:100%">
+					<h1>Steamed Chicken Momos</h1>
+					<p class="price">₹70.00</p>
 
-	</div>
-	<div class="footer">
-		<h3>Copyright © 2015-2021 New Town Food Corner. All rights reserved. Designed & Maintained by Soumyadeep
-			Banerjee</h3>
+					<p><button>Add to Cart</button></p>
+				</div>
+
+		</section>
+
+		<br><br><br>
+		<footer>Copyright © 2015-2021 New Town Food Corner. All rights reserved. Designed & Maintained by
+			SoumyadeepB2001.</footer>
 	</div>
 </body>
 

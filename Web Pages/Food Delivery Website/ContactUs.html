@@ -57,80 +57,83 @@
 </head>
 
 <body>
-	<section>
-		<ul class="navbar">
-			<li class="navbar"><img src="Images\logo.png" height="45" width="45"></li>
-			<li class="navbar"><a class="navbar" href="Home.html">Home</a></li>
-			<li class="navbar"><a class="navbar" href="OrderNow.html">Order Now</a></li>
-			<li class="navbar"><a class="navbar" href="About.html">About</a></li>
-			<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
-			<li class="navbar" id="active"><a class="navbar" id="active" href="ContactUs.html">Contact Us</a></li>
-			<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png" height="20"
-						width="20"></a></li>
-			<div class="search-container">
-				<form action="/action_page.php">
-					<input type="text" placeholder="Search" name="search">
-					<button type="submit"><img src="Images\search.png" height="12" width="12"></button>
+	<div class="main-container"> <!--This one is mainly to keep the footer at the bottom of the viewport-->
+		<section>
+			<ul class="navbar">
+				<li class="navbar"><img src="Images\logo.png" height="37" width="38"></li>
+				<li class="navbar"><a class="navbar" href="Home.html">Home</a></li>
+				<li class="navbar"><a class="navbar" href="OrderNow.html">Order Now</a></li>
+				<li class="navbar"><a class="navbar" href="About.html">About</a></li>
+				<li class="navbar"><a class="navbar" href="Blog.html">Blog</a></li>
+				<li class="navbar" id="active"><a class="navbar" id="active" href="ContactUs.html">Contact Us</a></li>
+				<li class="navbar"><a class="navbar" href="Cart.html"><img class="cart" src="Images\Cart.png"
+							height="18" width="16"></a></li>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search" name="search">
+						<button type="submit"><img src="Images\search.png" height="10" width="10"></button>
+					</form>
+				</div>
+			</ul>
+		</section>
+		<section class="contact">
+			<hr class="line">
+			<div>
+				<div style="text-align: center;">
+					<img src="Images\logo.png" height="90" width="90">
+				</div>
+				<p>&nbsp;&nbsp;Email: newtownfoodcorner@gmail.com</p>
+				<p>&nbsp;&nbsp;Phone: 9883244207</p>
+				<p>&nbsp;&nbsp;Address: Club Eco Vista Premises, 2F/11, Eco-Space Business Park, Action Area II, New
+					Town,
+					Kolkata - 700156</p>
+				<div style="text-align: center;">
+					<a href="https://www.facebook.com/facebookappIndia"><img src="Images\fb.png" height="35"
+							width="35"></a>
+					<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+							src="Images\insta.png" height="35" width="35"></a>
+					<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images\twtr.png"
+							height="35" width="35"></a>
+				</div>
+			</div>
+
+			<hr class="line">
+			<div class="container">
+				<form action="action_page.php">
+
+					<label for="name">Name</label>
+					<input class="forminfo" type="text" id="name" name="name">
+
+					<label for="name">Contact Number</label>
+					<input class="forminfo" type="number" id="cnumber" name="cnumber">
+
+					<label for="add">Address</label>
+					<input class="forminfo" type="text" id="add" name="add">
+
+					<label for="city">City</label>
+					<input class="forminfo" type="text" id="city" name="city">
+
+					<label for="country">Country</label>
+					<select class="forminfo" id="country" name="country">
+						<option value="Bangladesh">Bangladesh</option>
+						<option value="China">China</option>
+						<option value="India">India</option>
+						<option value="Myanmar">Myanmar</option>
+						<option value="SriLanka">Sri Lanka</option>
+					</select>
+
+					<label for="subject">Your message</label>
+					<textarea class="forminfo" id="subject" name="subject" placeholder="Write your message"
+						style="height:200px"></textarea>
+
+					<input type="submit" value="Submit">
+
 				</form>
 			</div>
-		</ul>
-	</section>
-	<section class="contact">
-		<hr class="line">
-		<div>
-			<div style="text-align: center;">
-				<img src="Images\logo.png" height="90" width="90">
-			</div>
-			<p>&nbsp;&nbsp;Email: newtownfoodcorner@gmail.com</p>
-			<p>&nbsp;&nbsp;Phone: 9883244207</p>
-			<p>&nbsp;&nbsp;Address: Club Eco Vista Premises, 2F/11, Eco-Space Business Park, Action Area II, New Town,
-				Kolkata - 700156</p>
-			<div style="text-align: center;">
-				<a href="https://www.facebook.com/facebookappIndia"><img src="Images\fb.png" height="35" width="35"></a>
-				<a href="https://www.instagram.com/instagram/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-						src="Images\insta.png" height="35" width="35"></a>
-				<a href="https://twitter.com/Twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images\twtr.png"
-						height="35" width="35"></a>
-			</div>
-		</div>
-
-		<hr class="line">
-		<div class="container">
-			<form action="action_page.php">
-
-				<label for="name">Name</label>
-				<input class="forminfo" type="text" id="name" name="name">
-
-				<label for="name">Contact Number</label>
-				<input class="forminfo" type="number" id="cnumber" name="cnumber">
-
-				<label for="add">Address</label>
-				<input class="forminfo" type="text" id="add" name="add">
-
-				<label for="city">City</label>
-				<input class="forminfo" type="text" id="city" name="city">
-
-				<label for="country">Country</label>
-				<select class="forminfo" id="country" name="country">
-					<option value="Bangladesh">Bangladesh</option>
-					<option value="China">China</option>
-					<option value="India">India</option>
-					<option value="Myanmar">Myanmar</option>
-					<option value="SriLanka">Sri Lanka</option>
-				</select>
-
-				<label for="subject">Your message</label>
-				<textarea class="forminfo" id="subject" name="subject" placeholder="Write your message"
-					style="height:200px"></textarea>
-
-				<input type="submit" value="Submit">
-
-			</form>
-		</div>
-	</section>
-	<div class="footer">
-		<h3>Copyright © 2015-2021 New Town Food Corner. All rights reserved. Designed & Maintained by Soumyadeep
-			Banerjee</h3>
+		</section>
+		<br><br><br>
+		<footer>Copyright © 2015-2021 New Town Food Corner. All rights reserved. Designed & Maintained by
+			SoumyadeepB2001.</footer>
 	</div>
 </body>
 
