@@ -1,0 +1,188 @@
+
+>>> 5+6
+
+11
+
+>>> 5+6+7
+
+18
+
+>>> 5+
+
+  File "<stdin>", line 1
+     
+     5+
+      
+          ^
+
+SyntaxError: invalid syntax
+
+>>> (5+6)
+
+11
+
+>>> (5+
+
+... 6)
+
+11
+
+>>> (2+
+
+... (3+
+
+... 4)
+
+... )
+
+9
+
+>>> 5+6  #additional operator
+
+11
+
+>>> 2.3+4.5
+
+6.8
+
+>>> 3<4
+
+True
+
+>>> 3>4
+
+False
+>>> 4/3
+
+1.3333333333333333
+
+>>> 4//3
+
+1
+
+>>> 4.0/3.0
+
+1.3333333333333333
+
+>>> 1.2e4
+
+12000.0
+
+>>> 1.2E3
+
+1200.0
+
+>>> 40%15
+
+10
+
+>>> "Good morning"
+
+'Good morning'
+
+>>> (6//2)<(8//2)
+
+True
+
+>>> (6//2)>(8//2)
+
+False
+
+>>> True and True
+
+True
+
+>>> True and False
+
+False
+
+>>> True or False
+
+True
+
+>>> a = 5
+
+>>> a
+5
+
+>>> a+2
+
+7
+
+>>> a==2
+
+False
+
+>>> a==7
+
+False
+
+>>> a==5
+True
+
+>>> b = "abc"
+
+>>> b
+
+'abc'
+
+>>> b == 'abc'
+
+True
+
+>>> 2**3
+8
+
+>>> 2.3+4.5
+
+6.8
+>>> (int)(2.3+4.5)
+
+6
+
+>>> "2.3"+"4.5"
+
+'2.34.5'
+
+>>> a = input("Enter a value: ")
+
+Enter a value: 78
+
+>>> a
+
+'78'
+
+>>> a+2
+
+Traceback (most recent call last):
+
+  File "<stdin>", line 1, in <module>
+
+TypeError: can only concatenate str (not "int") to str
+
+>>> b = int(input("Enter a value: "))
+
+Enter a value: 45
+
+>>> b
+
+45
+
+>>> b+2
+
+47
+
+>>> print b
+
+  File "<stdin>", line 1
+
+    print b
+
+               ^
+
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(b)?
+
+>>> print (b)
+
+45
+
