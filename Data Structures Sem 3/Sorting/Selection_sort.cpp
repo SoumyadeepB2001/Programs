@@ -1,22 +1,28 @@
+/*
+Data member - array[], len
+Functions - inputLenght(), inputArray(), sort(), display()
+*/
+
 #include <iostream>
 using namespace std;
-
 class Selection_sort
 {
-	int ar[20], len;
+	int ar[50];
+	int len;
 
 public:
 	Selection_sort();
 	Selection_sort(int x);
-	void input();
-	void ascending_sort();
-	void descending_sort();
+	void inputLength();
+	void inputArray();
+	void ascendingSort();
+	void descendingSort();
 	void display();
 };
 
 Selection_sort ::Selection_sort()
 {
-	len = 5;
+	len = 4;
 }
 
 Selection_sort ::Selection_sort(int x)
@@ -24,75 +30,114 @@ Selection_sort ::Selection_sort(int x)
 	len = x;
 }
 
-void Selection_sort ::input()
+void Selection_sort ::inputLength()
 {
-	cout << "Enter the elements:" << endl;
+	cout << "Enter the length of the array" << endl;
+	cin >> len;
+}
+
+void Selection_sort ::inputArray()
+{
+	cout << "Enter the elements of the array" << endl;
 	for (int i = 0; i < len; i++)
 	{
 		cin >> ar[i];
 	}
 }
 
-void Selection_sort ::ascending_sort()
+void Selection_sort ::display()
 {
-	int temp;
-	int i, j;
-	for (i = 1; i < len; i++)
-	{
-		temp = ar[i];
-		for (j = i - 1; j >= 0; j--)
-		{
-			if (temp < ar[j])
-			{
-				ar[j + 1] = ar[j];
-			}
-			else
-				break;
-		}
-		ar[j + 1] = temp;
-	}
-}
-
-void Selection_sort ::descending_sort()
-{
-	int temp;
-	int i, j;
-	for (i = 1; i < len; i++)
-	{
-		temp = ar[i];
-		for (j = i - 1; j >= 0; j--)
-		{
-			if (temp > ar[j])
-			{
-				ar[j + 1] = ar[j];
-			}
-			else
-				break;
-		}
-		ar[j + 1] = temp;
-	}
-}
-
-void Selection_sort::display()
-{
-	cout << "The elements are:" << endl;
+	cout << "Value of the array is" << endl;
 	for (int i = 0; i < len; i++)
+		cout << ar[i] << " ";
+	cout << endl;
+}
+
+void Selection_sort ::ascendingSort()
+{
+	int i, j, minIndex;
+	int min;
+	for (i = 0; i < len; i++)
 	{
-		cout << ar[i] << endl;
+		min = ar[i];
+		minIndex = i;
+		for (j = i + 1; j < len; j++)
+		{
+			if (min > ar[j])
+			{
+				min = ar[j];
+				minIndex = j;
+			}
+		}
+		if (i != minIndex)
+		{
+			int temp = ar[i];
+			ar[i] = min;
+			ar[minIndex] = temp;
+		}
+	}
+}
+
+void Selection_sort ::descendingSort()
+{
+	int i, j, minIndex;
+	int min;
+	for (i = 0; i < len; i++)
+	{
+		min = ar[i];
+		minIndex = i;
+		for (j = i + 1; j < len; j++)
+		{
+			if (min < ar[j])
+			{
+				min = ar[j];
+				minIndex = j;
+			}
+		}
+		if (i != minIndex)
+		{
+			int temp = ar[i];
+			ar[i] = min;
+			ar[minIndex] = temp;
+		}
 	}
 }
 
 int main()
 {
+	cout << "Default Constructor" << endl;
 	Selection_sort ob;
-	ob.input();
-	cout << "Before Sorting" << endl;
+	ob.inputArray();
 	ob.display();
-	ob.ascending_sort();
-	cout << "After sorting in Ascending Order" << endl;
+	ob.ascendingSort();
+	cout << "After sorting in ascending ";
 	ob.display();
-	ob.descending_sort();
-	cout << "After sorting in Descending Order" << endl;
+	ob.descendingSort();
+	cout << "After sorting in descending ";
 	ob.display();
+
+	cout << "Parameterized Constructor" << endl;
+	Selection_sort ob1(5);
+	ob1.inputArray();
+	ob1.display();
+	ob1.ascendingSort();
+	cout << "After sorting in ascending ";
+	ob1.display();
+	ob1.descendingSort();
+	cout << "After sorting in descending ";
+	ob1.display();
+
+	cout << "Input length function" << endl;
+	Selection_sort ob2;
+	ob2.inputLength();
+	ob2.inputArray();
+	ob2.display();
+	ob2.ascendingSort();
+	cout << "After sorting in ascending ";
+	ob2.display();
+	ob2.descendingSort();
+	cout << "After sorting in descending ";
+	ob2.display();
+
 	return 0;
 }

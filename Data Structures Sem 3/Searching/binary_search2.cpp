@@ -3,12 +3,12 @@ using namespace std;
 class BinarySearch
 {
 public:
-	int ar[50], len;
+	int ar[50], len, comp;
 	BinarySearch();
 	BinarySearch(int x);
 	void inputLength();
 	void inputArray();
-	void binary_search();
+	void binary_search(int);
 	void display();
 };
 
@@ -45,19 +45,18 @@ void BinarySearch ::display()
 	cout << endl;
 }
 
-void BinarySearch ::binary_search()
+void BinarySearch ::binary_search(int value)
 {
-	int first = 0, last = len - 1, mid, value, comp=0;
-	cout << "Enter the value to be searched" << endl;
-	cin >> value;
+	int first = 0, last = len - 1, mid;
+	comp = 0;
 	while (first <= last)
 	{
 		mid = (first + last) / 2;
-	comp++;
+		comp++;
 		if (ar[mid] == value)
 		{
-			cout << "Value Found" << endl;
-			cout<<"Number of comparisons = "<<comp<<endl;
+			cout << value << " Found" << endl;
+			cout << "Number of comparisons = " << comp << endl;
 			return;
 		}
 		else if (value < ar[mid])
@@ -66,27 +65,23 @@ void BinarySearch ::binary_search()
 			first = mid + 1;
 	}
 	cout << "Value Not Found" << endl;
-	cout<<"Number of comparisons = "<<comp<<endl;
+	cout << "Number of comparisons = " << comp << endl;
 }
 
 int main()
 {
-	cout << "Default Constructor" << endl;
 	BinarySearch ob;
+	ob.inputLength();
 	ob.inputArray();
 	ob.display();
-	ob.binary_search();
-
-	cout << "Parameterised Constructor" << endl;
-	BinarySearch ob1(4);
-	ob1.inputArray();
-	ob1.display();
-	ob1.binary_search();
-
-	cout << "Input length function" << endl;
-	BinarySearch ob2;
-	ob2.inputLength();
-	ob2.inputArray();
-	ob2.display();
-	ob2.binary_search();
+	float avg;
+	int sum = 0;
+	for (int i = 0; i < ob.len; i++)
+	{
+		ob.binary_search(ob.ar[i]);
+		sum += ob.comp;
+	}
+	avg = (float)sum / ob.len;
+	cout << "Average of all comparisons = " << avg << endl;
+	return 0;
 }

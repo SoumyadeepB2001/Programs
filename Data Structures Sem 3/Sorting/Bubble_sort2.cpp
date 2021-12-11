@@ -2,20 +2,21 @@
 using namespace std;
 class Bubble_sort
 {
-	int ar[50], len;
+	float ar[50];
+	int len;
 
 public:
 	Bubble_sort();
 	Bubble_sort(int x);
-	void inputLength();
 	void inputArray();
+	void inputLength();
 	void sort();
 	void display();
 };
 
 Bubble_sort::Bubble_sort()
 {
-	len = 4;
+	len = 6;
 }
 
 Bubble_sort::Bubble_sort(int x)
@@ -29,35 +30,38 @@ void Bubble_sort ::inputLength()
 	cin >> len;
 }
 
-void Bubble_sort ::inputArray()
+void Bubble_sort::inputArray()
 {
 	cout << "Enter the elements of the array" << endl;
 	for (int i = 0; i < len; i++)
-	{
 		cin >> ar[i];
-	}
 }
 
 void Bubble_sort::sort()
 {
-	int temp;
+	float temp;
+	int comp = 0, swap = 0;
 	for (int i = 0; i < len; i++)
 	{
 		for (int j = 0; j < len - i - 1; j++)
 		{
+			comp++;
 			if (ar[j] > ar[j + 1])
 			{
+				swap++;
 				temp = ar[j];
 				ar[j] = ar[j + 1];
 				ar[j + 1] = temp;
 			}
 		}
 	}
+	cout << "Number of comparisons = " << comp << endl
+		 << "Number of swaps = " << swap << endl;
 }
 
 void Bubble_sort::display()
 {
-	cout << "Value of the array is" << endl;
+	cout << "Value of the array is ";
 	for (int i = 0; i < len; i++)
 		cout << ar[i] << " ";
 	cout << endl;
@@ -89,4 +93,5 @@ int main()
 	ob2.sort();
 	cout << "After sorting ";
 	ob2.display();
+	return 0;
 }

@@ -1,61 +1,68 @@
 #include <iostream>
 using namespace std;
-class Bubble_sort
+
+class Insertion_sort
 {
-	int ar[50], len;
+	int ar[20];
+	int len;
 
 public:
-	Bubble_sort();
-	Bubble_sort(int x);
-	void inputLength();
+	Insertion_sort();
+	Insertion_sort(int x);
 	void inputArray();
+	void inputLength();
 	void sort();
 	void display();
 };
 
-Bubble_sort::Bubble_sort()
+Insertion_sort ::Insertion_sort()
 {
-	len = 4;
+	len = 5;
 }
 
-Bubble_sort::Bubble_sort(int x)
+Insertion_sort ::Insertion_sort(int x)
 {
 	len = x;
 }
 
-void Bubble_sort ::inputLength()
+void Insertion_sort ::inputLength()
 {
 	cout << "Enter the length of the array" << endl;
 	cin >> len;
 }
 
-void Bubble_sort ::inputArray()
+void Insertion_sort ::inputArray()
 {
 	cout << "Enter the elements of the array" << endl;
 	for (int i = 0; i < len; i++)
-	{
 		cin >> ar[i];
-	}
 }
 
-void Bubble_sort::sort()
+void Insertion_sort ::sort()
 {
 	int temp;
-	for (int i = 0; i < len; i++)
+	int i, j, comp = 0, shift = 0;
+	for (i = 1; i < len; i++)
 	{
-		for (int j = 0; j < len - i - 1; j++)
+		temp = ar[i];
+		for (j = i - 1; j >= 0; j--)
 		{
-			if (ar[j] > ar[j + 1])
+			comp++;
+			if (temp < ar[j])
 			{
-				temp = ar[j];
-				ar[j] = ar[j + 1];
-				ar[j + 1] = temp;
+				shift++;
+				ar[j + 1] = ar[j];
 			}
+			else
+				break;
 		}
+		ar[j + 1] = temp;
 	}
+	cout << "Number of comparisons = " << comp << endl
+		 << "Number of shifts = " << shift << endl;
 }
 
-void Bubble_sort::display()
+void Insertion_sort::display()
 {
 	cout << "Value of the array is" << endl;
 	for (int i = 0; i < len; i++)
@@ -66,15 +73,15 @@ void Bubble_sort::display()
 int main()
 {
 	cout << "Default Constructor" << endl;
-	Bubble_sort ob;
+	Insertion_sort ob;
 	ob.inputArray();
 	ob.display();
 	ob.sort();
 	cout << "After sorting ";
 	ob.display();
 
-	cout << "Parameterised Constructor" << endl;
-	Bubble_sort ob1(5);
+	cout << "Parameterized Constructor" << endl;
+	Insertion_sort ob1(5);
 	ob1.inputArray();
 	ob1.display();
 	ob1.sort();
@@ -82,11 +89,13 @@ int main()
 	ob1.display();
 
 	cout << "Input length function" << endl;
-	Bubble_sort ob2;
+	Insertion_sort ob2;
 	ob2.inputLength();
 	ob2.inputArray();
 	ob2.display();
 	ob2.sort();
 	cout << "After sorting ";
 	ob2.display();
+
+	return 0;
 }

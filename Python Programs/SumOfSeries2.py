@@ -1,0 +1,12 @@
+# s = 1- 2/2! +3/3!- 4/4!
+n = int(input("Enter value of n : "))
+sum = 0
+i = 1
+f = 1
+sign = 1
+while i <= n:
+    f *= i
+    sum += sign*i/f
+    sign *= -1
+    i += 1
+print("Sum =", sum)
