@@ -17,7 +17,7 @@ int main()
 		b=a%10;
 		ar[b]=a;
 	}
-	cout<<"Enter the elements of the array"<<endl;
+	cout<<"The elements of the array are"<<endl;
 	for(i=0;i<10;i++)
 	{
 		cout<<ar[i]<<" ";
