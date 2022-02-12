@@ -1,0 +1,15 @@
+create table student1202_3 (name varchar2(10), marks number);
+insert into student1202_3 values ('akash', 80);
+insert into student1202_3 values ('abhirup', 70);
+insert into student1202_3 values ('sagarika', 60);
+insert into student1202_3 values ('soumik', 50);
+select * from student1202_3;
+select * from student1202_3 where name like 'a%';
+select * from student1202_3 where name like '%a';
+insert into student1202_3 values ('anamika', 50);
+select * from student1202_3 where name like 'a%a';
+select * from student1202_3 where name not like '%a%';
+select * from student1202_3 where name like '_____';
+select * from student1202_3 where name like '_a%';
+select * from student1202_3 where name like '_a%' or name like '_e%' or name like '_i%' or name like '_o%' or name like '_u%';
+select * from student1202_3 where name like 'a______';
