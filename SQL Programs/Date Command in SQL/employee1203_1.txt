@@ -1,0 +1,19 @@
+create table employee1203_1 (name varchar2(5), city varchar2(5), dob date);
+insert into employee1203_1 values ('Rita', 'KOL', to_date('10-jan-90','dd-mon-yy'));
+insert into employee1203_1 values ('Mita', 'KOL', to_date('15-02-80','dd-mm-yy'));
+insert into employee1203_1 values ('Sita', 'GOA', to_date('20-12-15','dd-mm-yy'));
+insert into employee1203_1 values ('Nita', 'MP', to_date('01-11-10','dd-mm-yy'));
+insert into employee1203_1 values ('Gita', 'UP', to_date('10-01-10','dd-mm-yy'));
+insert into employee1203_1 values ('Bita', 'UP', to_date('13-03-22','dd-mm-yy'));
+select * from employee1203_1;
+select name,city,to_char(dob,'yyyy') from employee1203_1;
+select name,city,to_char(dob,'dd/mm/yy') from employee1203_1;
+select name,city,to_char(dob,'(mm)(dd)(yy)') from employee1203_1;
+select name from employee1203_1 where dob > (select dob from employee1203_1 where name = 'Sita');
+select name from employee1203_1 where dob < to_date('2050','yyyy');
+select name from employee1203_1 where to_char(dob,'mon') = 'jan';
+select name from employee1203_1 where to_char(dob,'yyyy') = '2010';
+select name from employee1203_1 where to_char(dob,'dd') = '10';
+select name from employee1203_1 where to_char(dob,'yyyy') = (select to_char(dob,'yyyy') from employee1203_1 where name = 'Gita') and name != 'Gita';
+select months_between(sysdate, dob)/12 from employee1203_1;		//age
+select add_months(dob,1) from employee1203_1;

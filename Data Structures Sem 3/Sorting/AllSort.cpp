@@ -4,7 +4,7 @@ using namespace std;
 class AllSort
 {
 public:
-	int ar1[20], ar2[20], ar3[20], len, comp1 = 0, comp2 = 0, comp3 = 0;
+	int ar1[20], ar2[20], ar3[20], len, comp1, comp2, comp3;
 	AllSort();
 	AllSort(int x);
 	void inputArray();
@@ -17,11 +17,17 @@ public:
 AllSort ::AllSort()
 {
 	len = 6;
+	comp1=0;
+	comp2=0;
+	comp3=0;
 }
 
 AllSort ::AllSort(int x)
 {
 	len = x;
+	comp1=0;
+	comp2=0;
+	comp3=0;
 }
 
 void AllSort ::inputArray()

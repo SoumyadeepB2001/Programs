@@ -1,0 +1,11 @@
+select sysdate from dual;
+select to_char(sysdate, 'dd') from dual;
+select to_char(sysdate, 'mm') from dual;
+select to_char(sysdate, 'yy') from dual;
+select to_char(sysdate, 'yyyy') as year from dual;
+select to_char(sysdate, 'day') from dual;
+select to_char(sysdate, 'mon') as month_in_shortformn from dual;
+select to_char(sysdate, 'month') as month from dual;
+select to_char(sysdate, 'HH:MM') as day from dual;
+select to_char(sysdate, 'hh:mi:ss') as day from dual;
+
