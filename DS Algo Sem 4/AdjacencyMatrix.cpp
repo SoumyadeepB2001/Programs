@@ -13,6 +13,7 @@ public:
 	void set_values();
 	int get_self_loop();
 	int get_edges();
+	void get_degrees();
 };
 
 int AdjacencyMatrix::get_vertices()
@@ -77,6 +78,24 @@ int AdjacencyMatrix::get_edges()
 	return (edge + self_loop) / 2;
 }
 
+void AdjacencyMatrix::get_degrees()
+{
+	char vertex_name = 'A';
+	int degree = 0;
+	int i, j;
+	for (i = 0; i < vertices; i++)
+	{
+		for (j = 0; j < vertices; j++)
+		{
+			if (value[i][j] >= 1)
+				degree = degree + value[i][j];
+		}
+		cout << "Degree of edge " << vertex_name << " = " << degree << endl;
+		vertex_name++;
+		degree = 0;
+	}
+}
+
 int main()
 {
 	AdjacencyMatrix ob;
@@ -86,7 +105,10 @@ int main()
 	ob.set_values();
 	cout << "Adjacency Matrix:" << endl;
 	ob.get_values();
-	cout << endl
-		 << "No. of self loops: " << ob.get_self_loop() << endl;
+	cout << endl;
+	cout << "No. of self loops: " << ob.get_self_loop() << endl;
 	cout << "No. of edges: " << ob.get_edges() << endl;
+	ob.get_degrees();
+
+	return 0;
 }
