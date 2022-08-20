@@ -1,6 +1,6 @@
 import java.util.*;
  class Main {
-   static List multi_dimensional() {
+   static ArrayList<ArrayList<Integer>> multi_dimensional() {
       ArrayList<ArrayList<Integer> > x = new ArrayList<ArrayList<Integer> >();
       x.add(new ArrayList<Integer>());  //Inner List 1
       x.add(new ArrayList<Integer>());  //Inner List 2
