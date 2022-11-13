@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function f(c)
+        {
+            x = parseInt(document.getElementById("textBox1").value);
+            y = parseInt(document.getElementById("textBox2").value);
+
+            switch(c)
+            {
+                case '+':
+                    document.getElementById("textBox3").value = x+y;
+                    break;
+
+                case '-':
+                    document.getElementById("textBox3").value = x-y;
+                    break;
+
+                case '*':
+                    document.getElementById("textBox3").value = x*y;
+                    break;
+
+                case '/':
+                    document.getElementById("textBox3").value = x/y;
+                    break;
+                
+                default:
+                    document.getElementById("textBox3").value = "Error";
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="textBox1" placeholder="Enter first number">
+    <br><br>
+    <input type="text" id="textBox2" placeholder="Enter second number">
+    <br><br>
+    <input type="text" id="textBox3" placeholder="Result">
+    <br><br>
+    <input type="button" onclick="f('+')" value="+">
+    <input type="button" onclick="f('-')" value="-">
+    <input type="button" onclick="f('*')" value="*">
+    <input type="button" onclick="f('/')" value="/">
+</body>
+</html>

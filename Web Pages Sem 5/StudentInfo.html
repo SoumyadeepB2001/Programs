@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f()
+        {
+            name = document.getElementById("name").value;
+            roll = document.getElementById("roll").value;
+            course = document.getElementsByName("Course");
+            sem = document.getElementsByName("Semester");
+
+            for(i=0; i<course.length; i++)
+            {
+                if(course[i].checked)
+                    course2 = course[i].value;
+            }
+
+            for(i=0; i<sem.length; i++)
+            {
+                if(sem[i].checked)
+                    semester = sem[i].value;
+            }
+            
+            document.write("Name: " + name + "<br>Roll: " + roll + "<br>Stream: " + course2 + "<br>Semester: " + semester);
+        }
+    </script>
+</head>
+<body>
+    Name: <input type="text" id="name">
+    <br>
+    Roll: <input type="text" id="roll">
+    <br>
+    Course: 
+    <input type="radio" name="Course" value="BA">BA
+    <input type="radio" name="Course" value="BSc">BSc
+    <input type="radio" name="Course" value="BCom">BCom
+    <br>
+    Semester
+    <input type="radio" name="Semester" value="1st">1st
+    <input type="radio" name="Semester" value="2nd">2nd
+    <input type="radio" name="Semester" value="3rd">3rd
+    <input type="radio" name="Semester" value="4th">4th
+    <input type="radio" name="Semester" value="5th">5th
+    <input type="radio" name="Semester" value="6th">6th
+    <br>
+    <input type="button" value="Click" onclick="f()">
+</body>
+</html>
