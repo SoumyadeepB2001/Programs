@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function f()
+        {
+            var name= document.getElementById("name").value;
+            x = document.getElementsByName("Employment");
+            for(i=0; i<x.length; i++)
+            {
+                if(x[i].checked)
+                    var Employment = x[i].value;
+            }
+
+            x = document.getElementsByName("Skills");
+            var Skills="";
+            for(i=0; i<x.length; i++)
+            {
+                if(x[i].checked)
+                    Skills = Skills + " "+ x[i].value;
+            }
+            document.write(name + " is " + Employment + " with skillset: " + Skills);
+        }
+    </script>
+</head>
+<body>
+    Name:<input type="textbox" id="name" placeholder="Enter your name"><br>
+    <input type="radio" name="Employment" value="Employed">Employed
+    <input type="radio" name="Employment" value="Unemployed">Unemployed
+    <br>
+    Skills:<br>
+    <input type="checkbox" name="Skills" value="C">C
+    <input type="checkbox" name="Skills" value="C++">C++
+    <input type="checkbox" name="Skills" value="Java">Java
+    <input type="checkbox" name="Skills" value="Python">Python
+    <br>
+    <input type="button" onclick="f()" value="Submit">
+</body>
+</html>
