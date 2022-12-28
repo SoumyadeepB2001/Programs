@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Square Root and Cube Root</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number"));
+        let s = Math.sqrt(n);
+        let c = Math.cbrt(n);
+        document.write('<table border=2>');
+            document.write('<tr>');
+                document.write('<th>' + "Number" + '</th>');
+                document.write('<th>' + "SQRT" + '</th>');
+                document.write('<th>' + "CBRT" + '</th>');
+            document.write('</tr>');
+            document.write('<tr>');
+                document.write('<td>' + n + '</td>');
+                document.write('<td>' + s + '</td>');
+                document.write('<td>' + c + '</td>');
+            document.write('</tr>');
+        document.write('</table>');
+        </script>
+</body>
+</html>

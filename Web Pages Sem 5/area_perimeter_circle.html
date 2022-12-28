@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Area and perimeter of a circle</title>
+</head>
+<body>
+    <script>
+        let r = parseInt(prompt("Enter the radius of a Circle"));
+
+        let A = Math.PI * Math.pow(r, 2);
+        let P = 2 * Math.PI * r;
+
+        document.write('<table border=2>');
+        document.write('<tr>');
+        document.write('<th>' + "Radius of the Circle" + '</th>');
+        document.write('<th>' + "Area of the Circle" + '</th>');
+        document.write('<th>' + "Perimeter of the Circle" + '</th>');
+        document.write('</tr>');
+
+        document.write('<tr>');
+        document.write('<th>' + r + '</th>');
+        document.write('<th>' + A + '</th>');
+        document.write('<th>' + P + '</th>');
+        document.write('</tr>');
+        document.write('</table>');
+    </script>
+</body>
+</html>

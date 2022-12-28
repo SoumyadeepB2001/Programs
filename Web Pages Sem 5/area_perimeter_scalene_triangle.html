@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Triangle Area Perimeter</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter the First side of a Triangle"));
+        let b = parseInt(prompt("Enter the Second side of a Triangle"));
+        let c = parseInt(prompt("Enter the Third side of a Triangle"));
+
+        let P = a + b + c;
+        let s = P / 2;
+        let A = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+        document.write('<table border=2>');
+        document.write('<tr>');
+        document.write('<th>' + "First side of the Triangle" + '</th>');
+        document.write('<th>' + "Second side of the Triangle" + '</th>');
+        document.write('<th>' + "Third side of the Triangle" + '</th>');
+        document.write('<th>' + "Area of the Triangle" + '</th>');
+        document.write('<th>' + "Perimeter of the Triangle" + '</th>');
+        document.write('</tr>');
+
+        document.write('<tr>');
+        document.write('<th>' + a + '</th>');
+        document.write('<th>' + b + '</th>');
+        document.write('<th>' + c + '</th>');
+        document.write('<th>' + A + '</th>');
+        document.write('<th>' + P + '</th>');
+        document.write('</tr>');
+        document.write('</table>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>DOM (Document Object Model)</title>
+    </head>
+    <body>
+        <p id = "para"><b>Sunday</b><i>Monday</i><u>Thrusday</u></p>
+        <script>
+            let a = document.getElementById("para");
+            let b = document.getElementById("para").innerHTML;
+            let c = a.firstChild;
+            let d = a.firstChild.innerHTML;
+            let e = a.lastChild;
+            let f = a.lastChild.innerHTML;
+            let g = a.childNodes[0].innerHTML;
+            let h = a.childNodes[1].innerHTML;
+            let i = a.childNodes[2].innerHTML;
+            
+            document.write(a+"<br>"+"<br>");
+            document.write(b+"<br>"+"<br>");
+            document.write(c+"<br>"+"<br>");
+            document.write(d+"<br>"+"<br>");
+            document.write(e+"<br>"+"<br>");
+            document.write(f+"<br>"+"<br>");
+            document.write(g+"<br>"+"<br>");
+            document.write(h+"<br>"+"<br>");
+            document.write(i+"<br>"+"<br>");
+        </script>
+    </body>
+</html>

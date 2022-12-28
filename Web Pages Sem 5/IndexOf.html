@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>IndexOf function</title>
+</head>
+<script>
+    function check() {
+        x = document.getElementById("input").value;
+        y = document.getElementById("index").value;
+        b = x.indexOf(y);
+        document.write(`The index of ${y} is : `+b);
+    }
+</script>
+<body>
+    <label><b>Input : </b></label>
+    <input type="text" id="input" placeholder="Enter a Text">
+    <br><br>
+    <label><b>Index : </b></label>
+    <input type="text" id="index" placeholder="Enter a character">
+    <br><br>
+    <button onclick="check()">Check</button>
+</body>
+</html>
