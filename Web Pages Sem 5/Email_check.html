@@ -6,10 +6,10 @@
     function check() {
         x = document.getElementById("email").value;
         if (x.indexOf("@") == -1) {
-            alert("@ is not given");
+            alert("@ is missing");
         }
         else if (x.indexOf(".") == -1) {
-            alert(" . is not given");
+            alert(" . is missing");
         }
         else {
             document.write("Email is : " + x);
