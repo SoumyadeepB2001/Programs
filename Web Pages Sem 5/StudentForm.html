@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Reset Student Form</title>
+</head>
+<script>
+    function Print() {
+        Name = document.getElementById("name").value;
+        x = document.getElementsByName("gender");
+        for (var i = 0; i < x.length; i++) {
+            if (x[i].checked) {
+                Gender = x[i].value;
+            }
+        }
+        x = document.getElementsByName("Skills");
+        var Skills = "";
+        for (var i = 0; i < x.length; i++) {
+            if (x[i].checked) {
+                Skills = Skills + " " + x[i].value;
+            }
+        }
+        Department = document.getElementById("dept").value;
+        document.write(Name + " is " + Gender + " with Skillset " + Skills + " in " + Department + " Department .");
+    }
+    function Reset() {
+        Name = document.getElementById("name").value = "";
+        x = document.getElementsByName("gender");
+        for (var i = 0; i < x.length; i++) {
+            if (x[i].checked) {
+                x[i].checked = false;
+            }
+        }
+        x = document.getElementsByName("Skills");
+        for (var i = 0; i < x.length; i++) {
+            if (x[i].checked) {
+                x[i].checked = false;
+
+            }
+        }
+        x = document.getElementById("dept");
+        x.selectedIndex = 0;
+    }
+</script>
+<body id="reset">
+    <label>Name : </label>
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <br>
+    <br>
+    <label>Gender : </label>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <br>
+    <br>
+    Skills :<br>
+    <input type="checkbox" name="Skills" value="C">C<br>
+    <input type="checkbox" name="Skills" value="C++">C++<br>
+    <input type="checkbox" name="Skills" value="Java">Java<br>
+    <input type="checkbox" name="Skills" value="Python">Python<br>
+    <br>
+    <br>
+    <label>Department : </label>
+    <select id="dept">
+        <option value="Enter Department" selected>Select Your Department</option>
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+        <option value="Markting">Markting</option>
+    </select>
+    <br>
+    <br>
+    <input type="button" onclick="Print()" value="Submit">
+    <input type="button" onclick="Reset()" value="Reset">
+</body>
+</html>
