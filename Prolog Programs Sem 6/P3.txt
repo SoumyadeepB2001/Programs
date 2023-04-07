@@ -1,0 +1,8 @@
+?- girlfriend(ronaldo,morgan).
+false.
+
+?- girlfriend(messi,morgan).
+false.
+
+?- girlfriend(ronaldo,rapinoe).
+true.

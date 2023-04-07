@@ -1,0 +1,25 @@
+?- male(X).
+X = ronaldo ;
+X = messi.
+
+?- female(X).
+X = rapinoe ;
+X = morgan.
+
+?- female(rapinoe).
+true.
+
+?- male(messi).
+true.
+
+?- male(morgan).
+false.
+
+?- female(ronaldo).
+false.
+
+?- male(tevez).
+false.
+
+?- female(marta).
+false.

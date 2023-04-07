@@ -1,0 +1,15 @@
+?- girlfriend(X,Y).
+X = ronaldo,
+Y = rapinoe ;
+X = ronaldo,
+Y = morgan ;
+X = messi,
+Y = rapinoe ;
+X = messi,
+Y = morgan.
+
+?- girlfriend(messi,morgan).
+true.
+
+?- girlfriend(morgan,rapinoe).
+false.
