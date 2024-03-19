@@ -38,8 +38,24 @@ struct Node* createCircularList() {
 
     return head;
 }
-
 struct Node* sortList(struct Node *head) {
+     struct Node *p, *q;
+    int data;
+    for (p = head; p->next != head; p = p->next)
+    {
+        for (q = p->next; q != head; q = q->next)
+        {
+            if (p->data > q->data)
+            {
+                data = p->data;
+                p->data = q->data;
+                q->data = data;
+            }
+        }
+    }
+    return head;
+}
+/*struct Node* sortList(struct Node *head) {
     if (head == NULL || head->next == head) {
         // Empty list or single node list, no need to sort
         return head;
@@ -86,7 +102,7 @@ struct Node* sortList(struct Node *head) {
     curr->next = head;
 
     return head;
-}
+}*/
 
 void displayCircularList(struct Node* head) {
     struct Node* temp = head;
