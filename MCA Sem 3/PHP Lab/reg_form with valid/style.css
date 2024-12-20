@@ -1,0 +1,56 @@
+.container {
+    background-color: #c0dae2;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+label {
+    font-weight: bold;
+}
+
+form {
+    padding: 20px;
+}
+
+input[type="submit"] {
+    background-color: beige;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn {
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.reset-btn {
+    padding: 5px;
+    text-align: right;
+    font-size: 15px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form action="login_server.php" onsubmit="return validateForm()" method="POST">
+        <div class="container">
+            <h1 class="heading">Log-in</h1>
+            <p>Please fill in your details to log-in to your account</p>
+            <hr>
+            <br>            
+            <label for="email"><b>Email: </b></label>
+            <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            <br><br>
+            <label for="psw"><b>Password: </b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>            
+            <br><br>
+            <button type="submit" name="submit" class="submit-btn">Log-in</button>
+            <button type="reset" class="reset-btn">Clear</button>
+            <hr>
+    </form>
+</body>
+
+</html>

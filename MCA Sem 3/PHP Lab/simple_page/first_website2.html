@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title> First Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            background-color: #4702e9;
+            padding: 10px 0;
+        }
+
+        header ul {
+            list-style-type: none;
+            text-align: center;
+            color: white;
+        }
+
+        header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header ul li:hover {
+            background-color: #4702e9;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .info_left img {
+            border-radius: 10px;
+        }
+
+        .info_right {
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: #4702e9;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #00c7ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About US</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+        </ul>
+    </header>
+    <br>
+    <h1 align="center">About</h1> <br>
+    <div class="info">
+        <div class="info_left"> <img src="image.png" alt="my image" width="200" height="200"> </div>
+        <div class="info_right">
+            <p>The University of Kalyani,
+                West Bengal administered, UGC affiliated, NAAC accredited, collegiate Public
+                Research university in Kalyani, West Bengal, India. It offers courses at the
+                Undergraduate, Postgraduate and Doctoral levels. </p>
+            <br>
+            <p>
+                The university was established on 1 November 1960 by 'The Kalyani University Act 1960' of the Government
+                of West Bengal. The University of Kalyani is a State University and its activities are guided by 'The
+                Kalyani University Act, 1981 (amended up to 2001)', enacted by the Government of West Bengal.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 <a href="#">MCA 2023-2025.</a> University of Kalyani</p>
+    </footer>
+
+</body>
+
+</html>
